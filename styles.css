@@ -1,0 +1,48 @@
+body {
+  background-color: #eee;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Header Specifics */
+#header {
+  display: table;
+  width: 100%;
+  height: 200px;
+  background-color: #005;
+  opacity: 0.8;
+}
+#header #titlecontainer{
+  display: table-cell;
+  vertical-align: middle;
+  margin: inherit;
+}
+#header h1{
+  margin: inherit;
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+}
+
+/* Content Specifics */
+.content {
+  display: grid;
+  grid-template-columns: 200px 1fr 100px;
+  height: 1000px;
+}
+.content .sidebar {
+  grid-column: 1/2;
+  background-color: #999;
+  overflow: auto;
+}
+.content .sidebar .links {
+  display: block;
+  height: 100px;
+}
+.content .sidebar .links:hover{
+  background-color: #bbb;
+}
+.content .main-content{
+  display: block;
+  grid-column: 2/3;
+}
